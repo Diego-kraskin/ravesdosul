@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rave do Sul</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            background: #1a1a1a;
+            color: #fff;
+        }
+        .psychedelic {
+           background-image: url(./11857990.jpg);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+        }
+        @keyframes gradientBG {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+        .dj-photo {
+            border-radius: 50%;
+            transition: transform 0.3s;
+        }
+        .dj-photo:hover {
+            transform: scale(1.1);
+        }
+        .icon {
+            color: #ff0099;
+        }
+    </style>
+</head>
+<body class="psychedelic">
+    <div class="container mt-5">
+        <h1 class="text-center">Rave do Sul</h1>
+        <p class="text-center">Data: 23/12/24</p>
+        <p class="text-center">Local: Porto Alegre</p>
+        <div class="text-center mb-5">
+            <button class="btn btn-outline-light" onclick="window.open('https://www.google.com/maps/dir//Porto+Alegre', '_blank')">Receber rota via GPS</button>
+        </div>
+        <section id="eventos">
+            <h2 class="text-center">Evento 1</h2>
+            <p class="text-center">Página dedicada para eventos, aqui você encontra a lista dos eventos.</p>
+        </section>
+        <section id="lineup">
+            <h2 class="text-center">Line-up</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <img src="./transferir.jfif" alt="DJ 1" class="img-fluid dj-photo">
+                    <h3>DJ 1</h3>
+                    <a href="https://soundcloud.com/dj1" class="icon"><i class="fab fa-soundcloud fa-2x"></i></a>
+                </div>
+                <div class="col-md-4">
+                    <img src="./transferir.jfif" alt="DJ 2" class="img-fluid dj-photo">
+                    <h3>DJ 2</h3>
+                    <a href="https://soundcloud.com/dj2" class="icon"><i class="fab fa-soundcloud fa-2x"></i></a>
+                </div>
+                <div class="col-md-4">
+                    <img src="./transferir.jfif" alt="DJ 3" class="img-fluid dj-photo">
+                    <h3>DJ 3</h3>
+                    <a href="https://soundcloud.com/dj3" class="icon"><i class="fab fa-soundcloud fa-2x"></i></a>
+                </div>
+            </div>
+        </section>
+        <section id="links">
+            <h2 class="text-center">Redes Sociais</h2>
+            <div class="text-center">
+                <a href="https://www.instagram.com" class="icon mx-3"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="https://www.facebook.com" class="icon mx-3"><i class="fab fa-facebook fa-2x"></i></a>
+            </div>
+        </section>
+        <section id="contato">
+            <h2 class="text-center">Contato</h2>
+            <div class="text-center">
+                <a href="mailto:info@ravedosul.com" class="icon"><i class="fas fa-envelope fa-2x"></i></a>
+            </div>
+        </section>
+        <section id="sobre">
+            <h2 class="text-center">Sobre</h2>
+            <p class="text-center">Espaço para informações adicionais sobre o evento.</p>
+        </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
