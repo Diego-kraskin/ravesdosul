@@ -4,20 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rave do Sul</title>
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Estilos personalizados -->
     <link rel="stylesheet" href="styles.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- jQuery -->
-     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-     <!-- fullPage.js -->
-     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css" />
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
 </head>
 <body>
-
-   
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">Rave do Sul</a>
@@ -30,7 +24,7 @@
                         <a class="nav-link" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#eventos">festival</a>
+                        <a class="nav-link" href="#eventos">Festival</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#pvts">Pvts</a>
@@ -49,35 +43,26 @@
         </div>
     </nav>
 
-    <section id="home" class="section" style="background-image: url('./11857990.jpg');
-     background-size: cover; background-position: center; height: 100vh; display: flex; justify-content: center; align-items: center;">
+    <section id="home" class="section" style="background-image: url('./11857990.jpg'); background-size: cover; background-position: center; height: 100vh; display: flex; justify-content: center; align-items: center;">
         <div class="container text-center text-white">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 class="display-3">Seja bem-vindo a Raves do Sul <br>a sua vibe esta aqui!!</h1>
-
-
+                    <h1 class="display-3">Seja bem-vindo a Raves do Sul<br>a sua vibe está aqui!!</h1>
                     <button class="btn btn-primary btn-lg mt-4" onclick="document.getElementById('eventos').scrollIntoView({ behavior: 'smooth' });">Ver Eventos</button>
-            
                 </div>
             </div>
         </div>
     </section>
-    
 
     <section id="eventos" class="section bg-dark text-white">
-        
-       
         <div class="container">
-            
             <h2 class="text-center mb-5">Próximos Festivais</h2>
             <div class="row">
-                
                 <div class="col-md-4 mb-4">
                     <div class="card">
                         <img src="evento1.jfif" class="card-img-top" alt="Evento 1">
                         <div class="card-body">
-                            <h5 class="card-title">Energy festival</h5>
+                            <h5 class="card-title">Energy Festival</h5>
                             <a href="./index2.html" class="btn btn-outline-light">Detalhes</a>
                         </div>
                     </div>
@@ -105,36 +90,32 @@
     </section>
 
     <section id="pvts" class="section bg-dark text-white">
-        
-       
         <div class="container">
-            
-            <h2 class="text-center mb-5">Próximas Pvts</h2>
+            <h2 class="text-center mb-5">Próximos Pvts</h2>
             <div class="row">
-                
                 <div class="col-md-4 mb-4">
                     <div class="card">
-                        <img src="evento1.jfif" class="card-img-top" alt="Evento 1">
+                        <img src="evento1.jfif" class="card-img-top" alt="Pvt 1">
                         <div class="card-body">
-                            <h5 class="card-title">Energy festival</h5>
+                            <h5 class="card-title">Energy Festival</h5>
                             <a href="#" class="btn btn-outline-light">Detalhes</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="card">
-                        <img src="evento2.jfif" class="card-img-top" alt="Evento 2">
+                        <img src="evento2.jfif" class="card-img-top" alt="Pvt 2">
                         <div class="card-body">
-                            <h5 class="card-title">Evento 2</h5>
+                            <h5 class="card-title">Pvt 2</h5>
                             <a href="#" class="btn btn-outline-light">Detalhes</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="card">
-                        <img src="evento3.jfif" class="card-img-top" alt="Evento 3">
+                        <img src="evento3.jfif" class="card-img-top" alt="Pvt 3">
                         <div class="card-body">
-                            <h5 class="card-title">Evento 3</h5>
+                            <h5 class="card-title">Pvt 3</h5>
                             <a href="#" class="btn btn-outline-light">Detalhes</a>
                         </div>
                     </div>
@@ -143,7 +124,6 @@
         </div>
     </section>
 
-    
     <section id="links" class="section psychedelic-bg">
         <div class="container text-center text-white">
             <h2>Redes Sociais</h2>
@@ -166,9 +146,20 @@
             <p class="lead">Texto sobre a Rave do Sul.</p>
         </div>
     </section>
-    <script src="script.js"></script>
+
+    <!-- JavaScripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- fullPage.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
+    <script>
+        new fullpage('#fullpage', {
+            // Configurações do fullPage.js aqui
+            autoScrolling: true,
+            scrollHorizontally: true
+        });
+    </script>
 </body>
 </html>
+

@@ -1,5 +1,4 @@
 
-
 :root {
     --eventos-bg-color: #2f76d3; /* Cor de fundo padrão da seção eventos */
     --eventos-text-color: #fff; /* Cor do texto padrão na seção eventos */
@@ -8,10 +7,10 @@
     --card-hover-transform: translateY(-10px); /* Transformação ao passar o mouse nos cards */
 }
 
-
-html{
-    scroll-behavior: smooth 3.0s;
+html {
+    scroll-behavior: smooth; /* Comportamento suave de rolagem */
 }
+
 body {
     background: #1a1a1a;
     color: #fff;
@@ -25,7 +24,6 @@ body {
 }
 
 .section {
-    translate: 2.0s;
     width: 100vw;
     height: 100vh;
     padding: 100px 20px; /* Ajuste conforme necessário */
@@ -48,35 +46,43 @@ body {
     color: #fff;
 }
 
-/* Seção Eventos com Vídeo de Fundo */
+/* Seção Eventos */
 #eventos {
     background-color: var(--eventos-bg-color);
     color: var(--eventos-text-color);
-}
-
-#eventos #bg-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1; /* Garante que o vídeo fique atrás do conteúdo */
-}
-
-#eventos .container {
-    position: relative;
-    z-index: 2;
+    padding: 100px 20px; /* Ajuste conforme necessário */
+    box-sizing: border-box; /* Para incluir o padding na largura e altura totais */
+    text-align: center;
 }
 
 #eventos .card {
-    background-color: var(--card-bg-color);
+    background-image: url(./11857990.jpg); /* Imagem de fundo dos cards */
     color: var(--card-text-color);
     border: none; /* Remover borda */
     transition: transform 0.3s; /* Efeito de transição */
 }
 
 #eventos .card:hover {
+    transform: var(--card-hover-transform); /* Efeito de levantar ao passar o mouse */
+}
+
+/* Próximas Pvts */
+#pvts {
+    background-color: var(--eventos-bg-color);
+    color: var(--eventos-text-color);
+    padding: 100px 20px; /* Ajuste conforme necessário */
+    box-sizing: border-box; /* Para incluir o padding na largura e altura totais */
+    text-align: center;
+}
+
+#pvts .card {
+    background-image: url(./11857990.jpg); /* Imagem de fundo dos cards */
+    color: var(--card-text-color);
+    border: none; /* Remover borda */
+    transition: transform 0.3s; /* Efeito de transição */
+}
+
+#pvts .card:hover {
     transform: var(--card-hover-transform); /* Efeito de levantar ao passar o mouse */
 }
 
@@ -87,7 +93,7 @@ body {
 }
 
 .dj-photo:hover {
-    transform: scale(1.1);
+    transform: scale(1.1); /* Efeito de escala ao passar o mouse */
 }
 
 /* Botões */
@@ -121,59 +127,3 @@ body {
 .icon:hover {
     text-decoration: none;
 }
-
-
-/* Seção Eventos */
-#eventos {
-    background-color: var(--eventos-bg-color);
-    color: var(--eventos-text-color);
-    padding: 100px 20px; /* Ajuste conforme necessário */
-    box-sizing: border-box; /* Para incluir o padding na largura e altura totais */
-    text-align: center;
-}
-
-#eventos .card {
-    background-image: url(./11857990.jpg);
-    color: var(--card-text-color);
-    border: none; /* Remover borda */
-    transition: transform 0.3s; /* Efeito de transição */
-}
-
-#eventos .card:hover {
-    transform: var(--card-hover-transform); /* Efeito de levantar ao passar o mouse */
-}
-
-#pvts {
-    background-color: var(--eventos-bg-color);
-    color: var(--eventos-text-color);
-    padding: 100px 20px; /* Ajuste conforme necessário */
-    box-sizing: border-box; /* Para incluir o padding na largura e altura totais */
-    text-align: center;
-}
-
-#pvts .card {
-    background-image: url(./11857990.jpg);
-    color: var(--card-text-color);
-    border: none; /* Remover borda */
-    transition: transform 0.3s; /* Efeito de transição */
-}
-
-#pvts .card:hover {
-    transform: var(--card-hover-transform); /* Efeito de levantar ao passar o mouse */
-}
-
-.section {
-    width: 100vw;
-    height: 100vh;
-    padding: 100px 20px; /* Ajuste conforme necessário */
-    box-sizing: border-box; /* Para incluir o padding na largura e altura totais */
-    text-align: center;
-    position: relative;
-}
-
-
-
-
-
-
-
