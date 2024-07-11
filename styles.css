@@ -25,7 +25,7 @@ body {
 
 .section {
     width: 100vw;
-    height: 100vh;
+    height: auto:
     padding: 100px 20px; /* Ajuste conforme necessário */
     box-sizing: border-box; /* Para incluir o padding na largura e altura totais */
     text-align: center;
