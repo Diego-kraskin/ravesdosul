@@ -12,7 +12,7 @@ html {
 }
 
 body {
-    background: #1a1a1a;
+    background: #0371a3;
     color: #fff;
     font-family: 'Arial', sans-serif;
     padding-top: 70px; /* Ajuste conforme a altura da navbar */
@@ -21,11 +21,13 @@ body {
 
 .navbar {
     z-index: 1000; /* Garante que a navbar fique acima de outros conteúdos */
+    color: #0781b1;
 }
+
 
 .section {
     width: 100vw;
-    height: auto:
+    height: auto;
     padding: 100px 20px; /* Ajuste conforme necessário */
     box-sizing: border-box; /* Para incluir o padding na largura e altura totais */
     text-align: center;
@@ -42,7 +44,7 @@ body {
 }
 
 .section.bg-dark {
-    background-color: #222;
+    background-image: url(./11857990.jpg);
     color: #fff;
 }
 
@@ -127,3 +129,25 @@ body {
 .icon:hover {
     text-decoration: none;
 }
+
+.rating {
+    margin-top: 51%;
+    position: absolute;
+    display: flex;
+    
+}
+
+
+.rating .fa-star {
+    
+    color: #ddd; /* Cor das estrelas não preenchidas */
+    margin-right: 5px;
+    
+}
+
+.fa-star.checked {
+    color: #FFD700; /* Cor das estrelas preenchidas */
+}
+
+
+
