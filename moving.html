@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Evento</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        :root {
+            --navbar-bg-color: #ff0099; /* Cor de fundo da navbar */
+            --section-bg-image: url('seu-fundo.jpg'); /* Imagem de fundo da seção */
+            --text-color: #fff; /* Cor do texto */
+            --primary-color: #ff0099; /* Cor primária */
+            --secondary-color: #ff66b2; /* Cor secundária */
+            --card-bg-color: #333; /* Cor de fundo dos cards */
+            --card-text-color: #fff; /* Cor do texto dos cards */
+        }
+
+        body {
+            background: #1a1a1a;
+            color: var(--text-color);
+            font-family: 'Arial', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .navbar {
+            background-color: var(--navbar-bg-color);
+            z-index: 1000; /* Garante que a navbar fique acima de outros conteúdos */
+        }
+
+        .navbar-dark .navbar-brand,
+        .navbar-dark .nav-link {
+            color: #ffffff !important; /* Cor do texto desejada */
+        }
+
+        .navbar-dark .nav-link:hover {
+            color: #ddd !important; /* Cor do texto ao passar o mouse */
+        }
+
+        .navbar-dark .navbar-toggler {
+            border-color: #ffffff !important; /* Cor da borda do botão toggle */
+        }
+
+        .navbar-dark .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28white, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+        }
+
+        .section {
+            width: 100vw;
+            height: auto;
+            padding: 100px 20px; /* Ajuste conforme necessário */
+            box-sizing: border-box; /* Para incluir o padding na largura e altura totais */
+            text-align: center;
+            position: relative;
+            background-image: url(./espaço.jpg);
+            background-size: cover; /* Para cobrir toda a seção */
+            background-position: center; /* Centralizar a imagem */
+        }
+
+        .section h2 {
+            margin-bottom: 50px; /* Espaçamento inferior para os títulos */
+        }
+
+        .section.bg-dark {
+            color: var(--text-color);
+            background-color: rgba(0, 0, 0, 0.5); /* Adiciona uma sobreposição escura */
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            color: var(--text-color);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+            color: var(--text-color);
+        }
+
+        .img-fluid {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .text-center {
+        
+            margin-left: 15%;
+        }
+
+        .card {
+            background-image: url(./11857990.jpg);
+            color: var(--card-text-color);
+            border: none; /* Remover borda */
+            transition: transform 0.3s; /* Efeito de transição */
+        }
+
+        .card:hover {
+            transform: translateY(-10px); /* Efeito de levantar ao passar o mouse */
+        }
+
+        .btn-outline-light {
+            border-color: #fff;
+            color: #fff;
+        }
+
+        .btn-outline-light:hover {
+            background-color: #fff;
+            color: #222;
+        }
+
+        .col-md-6{
+            background-color: #1a1a1aa2;
+        }
+
+     
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Rave do Sul</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#eventos">Festival</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#pvts">Pvts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#links">Redes Sociais</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contato">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#sobre">Sobre</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="detalhes" class="section bg-dark text-white" style="padding-top: 120px;">
+        <div class="container">
+            <h2 class="text-center mb-5">Detalhes do Evento</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="./moving.jfif" class="card-img-top" alt="Evento 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Energy Festival</h5>
+                            
+                            <a href="#ingressos" class="btn btn-primary mt-2">Ingressos</a> <!-- Novo botão de Ingressos -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <br> <br>
+                    <h3>Energy Festival</h3>
+                    <p><strong>Data:</strong> 23/12/24</p>
+                    <p><strong>Local:</strong> Porto Alegre</p>
+                    <p>Descrição detalhada do evento. Aqui você pode adicionar todas as informações relevantes sobre o evento, como atrações, horários, ingressos, etc.</p>
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=Porto+Alegre" target="_blank" class="btn btn-primary">Obter Rotas</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

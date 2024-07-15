@@ -12,20 +12,42 @@ html {
 }
 
 body {
-    background: #0371a3;
-    color: #fff;
-    font-family: 'Arial', sans-serif;
+   margin-top: -55px;
+    background: #000000;
+    font-family: "Ga Maamli", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     padding-top: 70px; /* Ajuste conforme a altura da navbar */
     overflow-x: hidden; /* Previne barra de rolagem horizontal */
 }
 
+img{
+    width: 150px;
+    height: 150px;
+}
+
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 .navbar {
     z-index: 1000; /* Garante que a navbar fique acima de outros conteúdos */
     color: #0781b1;
 }
 
+.navbar-brand{
+    font-family: "Ga Maamli", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+ul{
+    color: #0781b1;
+}
 
 .section {
+    background-image: url(./espaço.jpg);
+    background-size: 100%;
+    background-size: cover;
     width: 100vw;
     height: auto;
     padding: 100px 20px; /* Ajuste conforme necessário */
@@ -44,8 +66,12 @@ body {
 }
 
 .section.bg-dark {
-    background-image: url(./11857990.jpg);
+    background-color: #0e8baa;
     color: #fff;
+}
+
+.navbarnav{
+    color: #0781b1;
 }
 
 /* Seção Eventos */
@@ -100,16 +126,20 @@ body {
 
 /* Botões */
 .btn-outline-light {
+    
     border-color: #fff;
     color: #fff;
 }
 
 .btn-outline-light:hover {
-    background-color: #fff;
+    background-color: #ffffff;
     color: #222;
 }
 
 .btn-primary {
+    font-family: "Ga Maamli", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     background-color: #ff0099;
     border-color: #ff0099;
     color: #fff;
@@ -149,5 +179,31 @@ body {
     color: #FFD700; /* Cor das estrelas preenchidas */
 }
 
+#home{
+    margin-top: -16px;
+}
+
+
+
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: rgb(13, 194, 207);
+}
+
+
+.navbar-dark .navbar-nav .nav-link{
+    color: rgb(239, 243, 245);
+}
+
+li{
+    font-family: "Ga Maamli", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+}
+/* Sobrescrevendo as classes do Bootstrap */
+.navbar-dark.bg-dark {
+    box-shadow:  #0781b1;
+    background-color: rgba(0, 0, 0, 0.507) !important; /* Cor de fundo desejada */
+}
 
 
